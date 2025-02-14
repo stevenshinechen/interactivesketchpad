@@ -1,6 +1,6 @@
-# Nerfies
+# Interactive Sketchpad
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [Interactive Sketchpad website](https://interactivesketchpad.github.io).
 
 If you find Nerfies useful for your work please cite:
 ```
