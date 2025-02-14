@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Interactive Sketchpad is an interactive multimodal system which facilitates collaborative problem solving with both text and images.">
+  <meta name="keywords" content="Interactive Sketchpad, Multimodal System, Collaborative Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Sketchpad: An Interactive Multimodal System for Collaborative, Visual Problem-Solving</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://stevenshinechen.github.io/">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Interactive Sketchpad: An Interactive Multimodal System for Collaborative, Visual Problem-Solving</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://stevenshinechen.github.io/">Steven-Shine Chen</a><sup>1</sup>*</span>,
+            <span class="author-block"><a href="https://www.media.mit.edu/people/jimin24/overview/">Jimin Lee</a><sup>1</sup>*</span>,
+            <span class="author-block"><a href="https://pliang279.github.io/">Paul Pu Liang</a><sup>1</sup></span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><em>*Equal contribution</em></span>
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://github.com/stevenshinechen/InteractiveSketchpad"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/XXXXXXX.XXXXXXX"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/XXXXXXX.XXXXXXX"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Humans have long relied on visual aids like sketches and diagrams to support reasoning and problem-solving. Visual tools, like auxiliary lines in geometry or graphs in calculus, are essential for understanding complex ideas. However, many tutoring systems remain text-based, providing feedback only through natural language. Leveraging recent advances in Large Multimodal Models (LMMs), this paper introduces Interactive Sketchpad, a tutoring system that combines language-based explanations with interactive visualizations to enhance learning. Built on a pre-trained LMM, Interactive Sketchpad is fine-tuned to provide step-by-step guidance in both text and visuals, enabling natural multimodal interaction with the student. Accurate and robust diagrams are generated by incorporating code execution into the reasoning process. User studies conducted on math problems such as geometry, calculus, and trigonometry demonstrate that Interactive Sketchpad leads to improved task comprehension, problem-solving accuracy, and engagement levels, highlighting its potential for transforming educational technologies.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Image and Text Section -->
+    <div class="columns is-multiline">
+      <div class="column is-full">
+        <p class="content has-text-justified">
+          Interactive Sketchpad enhances GPT-4o's ability to provide step-by-step, visual hints for problem-solving. Given a
+student query and problem statement, Interactive Sketchpad generates both textual hints and dynamic visual diagrams,
+allowing students to engage with the problem iteratively. Without Interactive Sketchpad, GPT-4o struggles to offer effective
+interactive guidance, frequently revealing the answer and not providing any visual aids, whereas Interactive Sketchpad
+enables a natural, multimodal learning experience that improves conceptual understanding.
+        </p>
+        <figure class="image is-4by3">
+          <img src="./static/images/calculus_teaser.png" alt="Calculus Overview" style="max-width: 100%; height: auto;">
+        </figure>
+      </div>
+      <div class="column is-full">
+        <p class="content has-text-justified">
+          Overview of Interactive Sketchpad: Given a multimodal question, Interactive Sketchpad generates a program
+          to create a visual aid, then uses the visual aid as part of a hint to help the user solve the problem. The visual aid is sent to the
+          interactive whiteboard which the user can write and draw on before sending the annotated diagram back to receive feedback or
+          further help.
+        </p>
+        <figure class="image is-4by3">
+          <img src="./static/images/geometry_teaser.png" alt="Geometry Overview" style="width: 100%; height: auto;">
+        </figure>
+      </div>
+    </div>
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/XXXXXXXXXX" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website is licensed under a <a rel="license"
+                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        This means you are free to borrow the <a
+          href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+        we just ask that you link back to this page in the footer.
+        Please remember to remove the analytics code included in the header of the website which
+        you do not want on your website.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
